@@ -1,0 +1,45 @@
+# Built application files
+*.apk
+*.aar
+*.aab
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files / build directories
+/build/
+/out/
+.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# IDE specific files (.idea)
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/shelf/
+.idea/gradle.xml
+
+# Intellij project files
+*.iml
+*.iws
+*.ipr
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

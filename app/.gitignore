@@ -1,0 +1,7 @@
+# App module build outputs
+/build/
+.gradle/
+.settings/
+bin/
+target/
+*.iml
