@@ -8,4 +8,26 @@
     <string name="course_info">Bachelor in Computer Applications (BCA)</string>
     <string name="btn_get_started">Get Started</string>
     <string name="toast_welcome">Lab 1 Running Successfully on Emulator!</string>
+
+    <!-- Lab 2: Unit 3 - Layout Types & Basic Widgets (Add Expense Form) -->
+    <string name="lab2_title">Lab 2: Layouts &amp; Basic Widgets</string>
+    <string name="title_add_expense">Add New Expense</string>
+    <string name="label_title">Expense Title</string>
+    <string name="label_amount">Amount</string>
+    <string name="hint_expense_title">e.g., Lunch, Groceries, Taxi</string>
+    <string name="hint_expense_amount">e.g., 250.00</string>
+    <string name="btn_save_expense">Save Expense</string>
+    <string name="error_empty_fields">Please fill in all required fields!</string>
+    <string name="error_invalid_amount">Please enter a valid numeric amount!</string>
+    <string name="success_expense_saved">Expense saved successfully!</string>
+
+    <!-- Lab 3: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox) -->
+    <string name="lab3_title">Lab 3: Advanced Widgets &amp; Events</string>
+    <string name="label_category">Category</string>
+    <string name="label_payment_method">Payment Method</string>
+    <string name="payment_cash">Cash</string>
+    <string name="payment_card">Credit / Debit Card</string>
+    <string name="payment_mobile">Mobile Banking</string>
+    <string name="checkbox_recurring">Recurring Expense (Monthly)</string>
+    <string name="error_select_category">Please select a valid expense category!</string>
 </resources>
