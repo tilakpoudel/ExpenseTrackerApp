@@ -1,0 +1,8 @@
+<resources>
+    <!-- Lab 1 String Resources -->
+    <string name="lab_title">Lab 1: Environment &amp; Project Setup</string>
+    <string name="welcome_message">Welcome to SSC Expense Tracker</string>
+    <string name="app_subtitle">Track your daily income and expenses seamlessly. Built for CACS351 Mobile Programming.</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="toast_welcome">Lab 1 Running Successfully on Emulator!</string>
+</resources>
