@@ -1,4 +1,4 @@
-package com.example.sscexpensetracker.lab03;
+package com.example.sscexpensetracker;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,10 +11,9 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.sscexpensetracker.R;
 
 /**
- * Lab 3 Reference Solution: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox).
+ * Lab 3 Reference Solution: Advanced Widgets (Spinner, RadioButton, CheckBox).
  */
 public class AddExpenseActivity extends AppCompatActivity {
 

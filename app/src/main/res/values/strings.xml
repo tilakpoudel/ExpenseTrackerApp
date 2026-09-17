@@ -20,4 +20,14 @@
     <string name="error_empty_fields">Please fill in all required fields!</string>
     <string name="error_invalid_amount">Please enter a valid numeric amount!</string>
     <string name="success_expense_saved">Expense saved successfully!</string>
+
+    <!-- Lab 3: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox) -->
+    <string name="lab3_title">Lab 3: Advanced Widgets &amp; Events</string>
+    <string name="label_category">Category</string>
+    <string name="label_payment_method">Payment Method</string>
+    <string name="payment_cash">Cash</string>
+    <string name="payment_card">Credit / Debit Card</string>
+    <string name="payment_mobile">Mobile Banking</string>
+    <string name="checkbox_recurring">Recurring Expense (Monthly)</string>
+    <string name="error_select_category">Please select a valid expense category!</string>
 </resources>

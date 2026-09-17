@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Lab 3: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox) & Event Handling
-    Demonstrates layout types combined with advanced form input widgets.
--->
+<!-- Lab 3 Reference Solution: Advanced Widgets (Spinner, RadioGroup, CheckBox) -->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_light"
-    android:fillViewport="true"
-    tools:context=".AddExpenseActivity">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp">
 
-        <!-- Lab Title -->
         <TextView
             android:id="@+id/tvLab3Title"
             android:layout_width="wrap_content"
@@ -31,7 +25,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Form Card Container -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardForm"
             android:layout_width="0dp"
@@ -40,9 +33,6 @@
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/card_background"
-            app:strokeColor="@color/primary_green"
-            app:strokeWidth="1dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLab3Title"
@@ -54,7 +44,6 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <!-- Form Heading -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -64,87 +53,29 @@
                     android:textStyle="bold"
                     android:layout_marginBottom="16dp" />
 
-                <!-- Expense Title -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_title"
-                    android:textColor="@color/text_dark"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="6dp" />
-
                 <EditText
                     android:id="@+id/etExpenseTitle"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:background="@drawable/ic_launcher_background"
-                    android:backgroundTint="@color/background_light"
                     android:hint="@string/hint_expense_title"
                     android:inputType="text"
-                    android:paddingHorizontal="16dp"
-                    android:textColor="@color/text_dark"
-                    android:textColorHint="@color/text_muted"
-                    android:textSize="14sp"
                     android:layout_marginBottom="16dp"
                     android:autofillHints="name" />
-
-                <!-- Expense Amount -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_amount"
-                    android:textColor="@color/text_dark"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="6dp" />
 
                 <EditText
                     android:id="@+id/etExpenseAmount"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:background="@drawable/ic_launcher_background"
-                    android:backgroundTint="@color/background_light"
                     android:hint="@string/hint_expense_amount"
                     android:inputType="numberDecimal"
-                    android:paddingHorizontal="16dp"
-                    android:textColor="@color/text_dark"
-                    android:textColorHint="@color/text_muted"
-                    android:textSize="14sp"
                     android:layout_marginBottom="16dp"
                     android:autofillHints="postalAddress" />
-
-                <!--
-                    Spinner (Dropdown) for Category selection (Lab 3)
-                -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_category"
-                    android:textColor="@color/text_dark"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="6dp" />
 
                 <Spinner
                     android:id="@+id/spinnerCategory"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:background="@drawable/ic_launcher_background"
-                    android:backgroundTint="@color/background_light"
                     android:layout_marginBottom="16dp" />
-
-                <!--
-                    RadioGroup & RadioButtons for Payment Method (Lab 3)
-                -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_payment_method"
-                    android:textColor="@color/text_dark"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="6dp" />
 
                 <RadioGroup
                     android:id="@+id/rgPaymentMethod"
@@ -158,53 +89,38 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/payment_cash"
-                        android:checked="true"
-                        android:textColor="@color/text_dark" />
+                        android:checked="true" />
 
                     <RadioButton
                         android:id="@+id/rbCard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/payment_card"
-                        android:textColor="@color/text_dark" />
+                        android:text="@string/payment_card" />
 
                     <RadioButton
                         android:id="@+id/rbMobile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/payment_mobile"
-                        android:textColor="@color/text_dark" />
+                        android:text="@string/payment_mobile" />
                 </RadioGroup>
 
-                <!--
-                    CheckBox for Recurring Expense (Lab 3)
-                -->
                 <CheckBox
                     android:id="@+id/cbRecurring"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/checkbox_recurring"
-                    android:textColor="@color/text_dark"
-                    android:textSize="14sp" />
+                    android:text="@string/checkbox_recurring" />
 
             </LinearLayout>
-
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Save Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSaveExpense"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:text="@string/btn_save_expense"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="12dp"
-            app:backgroundTint="@color/primary_green"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>

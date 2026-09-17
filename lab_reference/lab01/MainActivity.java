@@ -1,14 +1,12 @@
-package com.example.sscexpensetracker.lab01;
+package com.example.sscexpensetracker;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.sscexpensetracker.R;
 
 /**
- * Lab 1 Reference Solution: Unit 2 - Android Platform, Environment Setup,
- * Creating Project, View Hierarchy, Widget Attributes, String Resources & Event Handling.
+ * Lab 1 Reference Solution: Unit 2 - Project Setup, View Hierarchy & Event Handling.
  */
 public class MainActivity extends AppCompatActivity {
 

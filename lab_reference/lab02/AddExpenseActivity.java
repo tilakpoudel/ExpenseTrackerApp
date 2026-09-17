@@ -1,4 +1,4 @@
-package com.example.sscexpensetracker.lab02;
+package com.example.sscexpensetracker;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -6,10 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.sscexpensetracker.R;
 
 /**
- * Lab 2 Reference Solution: Unit 3 - Layout Types, Basic Widgets & Input Validation.
+ * Lab 2 Reference Solution: Unit 3 - Layout Types, Basic Widgets & Validation.
  */
 public class AddExpenseActivity extends AppCompatActivity {
 
