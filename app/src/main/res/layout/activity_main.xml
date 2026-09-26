@@ -3,8 +3,7 @@
     Lab 1: Unit 2 - View Hierarchy, Widget Attributes & String Resources
     ConstraintLayout allows placing views relative to each other and parent bounds without deep nesting.
 -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,7 +24,6 @@
         android:textAllCaps="true"
         android:textColor="@color/accent_teal"
         android:textSize="14sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,14 +33,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/card_background"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/card_background"
-        app:strokeColor="@color/primary_green"
-        app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLabTitle">
+        app:layout_constraintTop_toBottomOf="@id/tvLabTitle"
+        app:strokeColor="@color/primary_green"
+        app:strokeWidth="1dp">
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -50,18 +48,20 @@
         Interactive Material Button
         Demonstrates event handling preparation in Lab 1.
     -->
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGetStarted"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/btn_get_started"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:cornerRadius="12dp"
         app:backgroundTint="@color/primary_green"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
@@ -70,19 +70,20 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="24dp"
+        android:rotationY="0"
         app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLabTitle"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.518"
         tools:ignore="MissingConstraints">
 
         <!-- App Logo Icon -->
         <ImageView
             android:id="@+id/imgAppLogo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="119dp"
+            android:layout_height="110dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/app_name"
             android:src="@mipmap/ic_launcher" />

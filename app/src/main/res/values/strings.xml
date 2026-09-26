@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SSC Expense Tracker</string>
+    <string name="app_name">SSC Expense Tracker test</string>
 
     <!-- Lab 1: Unit 2 - String Resources & View Hierarchy Concepts -->
     <string name="lab_title">Lab 1: Environment &amp; Project Setup</string>
