@@ -20,4 +20,6 @@
     <string name="error_empty_fields">Please fill in all required fields!</string>
     <string name="error_invalid_amount">Please enter a valid numeric amount!</string>
     <string name="success_expense_saved">Expense saved successfully!</string>
+    <string name="btn_start_lab">Start lab</string>
+    <string name="btn_see_projects">See projects</string>
 </resources>
