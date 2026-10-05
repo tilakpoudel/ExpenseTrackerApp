@@ -18,6 +18,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -27,7 +28,10 @@
             android:name=".AddExpenseActivity"
             android:exported="false"
             android:label="@string/title_add_expense" />
-
+        <activity
+            android:name=".LabWorks"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
