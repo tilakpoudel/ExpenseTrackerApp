@@ -34,15 +34,14 @@
         android:id="@+id/cardWelcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/card_background"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/card_background"
-        app:strokeColor="@color/primary_green"
-        app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLabTitle">
+        app:layout_constraintTop_toBottomOf="@+id/tvLabTitle"
+        app:strokeColor="@color/primary_green"
+        app:strokeWidth="1dp">
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -50,33 +49,48 @@
         Interactive Material Button
         Demonstrates event handling preparation in Lab 1.
     -->
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGetStarted"
+        android:id="@+id/btnStartLab"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/btn_get_started"
+        android:layout_marginBottom="92dp"
+        android:text="@string/btn_start_lab"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:backgroundTint="@color/purple_200"
         app:cornerRadius="12dp"
-        app:backgroundTint="@color/primary_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSeeProjects"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btn_see_projects"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_green"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartLab"
         app:layout_constraintTop_toBottomOf="@+id/tvLabTitle"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp">
 
         <!-- App Logo Icon -->
         <ImageView

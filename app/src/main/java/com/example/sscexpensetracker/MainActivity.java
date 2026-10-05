@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         try {
             setContentView(R.layout.activity_main);
 
-            Button btnGetStarted = findViewById(R.id.btnGetStarted);
+            Button btnSeeProjects = findViewById(R.id.btnSeeProjects);
 
-            if (btnGetStarted != null) {
-                btnGetStarted.setOnClickListener(v -> {
+            if (btnSeeProjects != null) {
+                btnSeeProjects.setOnClickListener(v -> {
                     // Explicit Intent to launch AddExpenseActivity (Lab 2)
                     Intent intent = new Intent(MainActivity.this, AddExpenseActivity.class);
                     startActivity(intent);
