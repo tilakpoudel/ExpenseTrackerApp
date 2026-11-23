@@ -2,6 +2,7 @@ package com.example.sscexpensetracker;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,11 +12,12 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Lab 3: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox) & Event Handling.
- * AddExpenseActivity manages the enhanced expense form.
+ * AddExpenseActivity manages the enhanced expense form with return back button support.
  */
 public class AddExpenseActivity extends AppCompatActivity {
 
@@ -32,6 +34,12 @@ public class AddExpenseActivity extends AppCompatActivity {
         try {
             // Inflate XML layout for Lab 3 (activity_add_expense.xml inside ScrollView)
             setContentView(R.layout.activity_add_expense);
+
+            // Enable Action Bar Back Return Button
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setTitle("Expense Tracker Form");
+            }
 
             // Bind UI widgets by their IDs
             etExpenseTitle = findViewById(R.id.etExpenseTitle);
@@ -134,5 +142,15 @@ public class AddExpenseActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             Toast.makeText(this, R.string.error_invalid_amount, Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // Handle Action Bar Up/Back button click
+        if (item.getItemId() == android.R.id.home) {
+            finish(); // Return back to previous activity
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
