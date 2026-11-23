@@ -42,6 +42,13 @@
             android:parentActivityName=".LabWorks"
             android:label="@string/title_projects" />
 
+        <!-- Expense Dashboard Activity (Full app scaffold) -->
+        <activity
+            android:name=".ExpenseDashboardActivity"
+            android:exported="false"
+            android:parentActivityName=".ProjectsActivity"
+            android:label="@string/title_dashboard" />
+
     </application>
 
 </manifest>

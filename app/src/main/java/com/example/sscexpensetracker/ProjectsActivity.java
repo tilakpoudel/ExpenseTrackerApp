@@ -37,11 +37,13 @@ public class ProjectsActivity extends AppCompatActivity {
                 });
             }
 
-            // CTA: Project 2
+            // CTA: Open Full Expense Dashboard Scaffold
             Button btnOpenProject2 = findViewById(R.id.btnOpenProject2);
             if (btnOpenProject2 != null) {
+                btnOpenProject2.setText("Open Expense Dashboard");
                 btnOpenProject2.setOnClickListener(v -> {
-                    Toast.makeText(this, "Ref: lab_reference/lab06/ & lab07/", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProjectsActivity.this, ExpenseDashboardActivity.class);
+                    startActivity(intent);
                 });
             }
 

@@ -14,6 +14,7 @@
 
     <string name="title_lab_works">CACS351 Unit-wise Lab Works</string>
     <string name="title_projects">Practical Projects &amp; Practice</string>
+    <string name="title_dashboard">Expense Tracker Dashboard</string>
 
     <!-- Add Expense Form Strings -->
     <string name="title_add_expense">Add New Expense</string>
