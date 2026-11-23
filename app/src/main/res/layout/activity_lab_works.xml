@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_light"
+    android:clipToPadding="false"
+    android:padding="20dp"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:orientation="vertical">
 
         <!-- Header -->
         <TextView
@@ -27,9 +28,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="14dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -37,13 +38,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit2_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -52,7 +53,16 @@
                     android:text="@string/unit2_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Open Lab 1 (Setup)"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -60,9 +70,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="14dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -70,13 +80,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit3_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -85,7 +95,16 @@
                     android:text="@string/unit3_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Open Lab 2 &amp; 3 (Form)"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -93,9 +112,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="14dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -103,13 +122,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit4_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -118,7 +137,16 @@
                     android:text="@string/unit4_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="View Lifecycle Demo"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -126,9 +154,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="14dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -136,13 +164,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit5_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -151,7 +179,16 @@
                     android:text="@string/unit5_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="View Fragments &amp; Dialogs"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -159,9 +196,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="14dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -169,13 +206,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit6_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -184,7 +221,16 @@
                     android:text="@string/unit6_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="View RecyclerView Demo"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -193,8 +239,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="3dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
             app:cardBackgroundColor="@color/card_background"
             app:strokeColor="@color/primary_green"
             app:strokeWidth="1dp">
@@ -202,13 +248,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/unit7_title"
                     android:textColor="@color/accent_teal"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
                 <TextView
@@ -217,7 +263,16 @@
                     android:text="@string/unit7_desc"
                     android:textColor="@color/text_dark"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenUnit7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="View SQLite &amp; API Demo"
+                    android:textSize="14sp"
+                    app:cornerRadius="8dp"
+                    app:backgroundTint="@color/primary_green" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -230,7 +285,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:cornerRadius="12dp"
-            app:backgroundTint="@color/primary_green" />
+            app:backgroundTint="@color/primary_green_dark" />
 
     </LinearLayout>
 </ScrollView>
