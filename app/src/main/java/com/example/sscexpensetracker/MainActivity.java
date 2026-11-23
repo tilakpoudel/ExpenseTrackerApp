@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Lab 1: Unit 2 - Android Platform, Environment Setup, Creating Project, View Hierarchy & Event Handling.
- * Navigates to Lab 2 (AddExpenseActivity).
+ * Navigates to Lab Works and Projects.
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -24,25 +24,22 @@ public class MainActivity extends AppCompatActivity {
         try {
             setContentView(R.layout.activity_main);
 
+            // See Projects Button -> Launches ProjectsActivity (Project list page)
             Button btnSeeProjects = findViewById(R.id.btnSeeProjects);
-
             if (btnSeeProjects != null) {
                 btnSeeProjects.setOnClickListener(v -> {
-                    // Explicit Intent to launch AddExpenseActivity (Lab 2)
-                    Intent intent = new Intent(MainActivity.this, AddExpenseActivity.class);
-                    Log.d(TAG, "onCreate: add expense activity called");
+                    Intent intent = new Intent(MainActivity.this, ProjectsActivity.class);
+                    Log.d(TAG, "onCreate: ProjectsActivity called");
                     startActivity(intent);
                 });
             }
 
+            // Start Lab Works Button -> Launches LabWorks Activity
             Button btnStartLab = findViewById(R.id.btnStartLab);
-
-            // TODO:: Start lab work activity
             if (btnStartLab != null) {
                 btnStartLab.setOnClickListener(v -> {
-                    // Explicit Intent to launch AddExpenseActivity (Lab 2)
                     Intent intent = new Intent(MainActivity.this, LabWorks.class);
-                    Log.d(TAG, "onCreate: Lab works activity called");
+                    Log.d(TAG, "onCreate: LabWorks activity called");
                     startActivity(intent);
                 });
             }
