@@ -18,7 +18,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,10 +27,21 @@
             android:name=".AddExpenseActivity"
             android:exported="false"
             android:label="@string/title_add_expense" />
+
+        <!-- Lab Works Activity (Unit-wise concepts & examples) -->
         <activity
             android:name=".LabWorks"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:parentActivityName=".MainActivity"
+            android:label="@string/title_lab_works" />
+
+        <!-- Projects Activity (Progressive practice projects) -->
+        <activity
+            android:name=".ProjectsActivity"
+            android:exported="false"
+            android:parentActivityName=".LabWorks"
+            android:label="@string/title_projects" />
+
     </application>
 
 </manifest>

@@ -1,35 +1,54 @@
 <resources>
     <string name="app_name">SSC Expense Tracker</string>
 
-    <!-- Lab 1: Unit 2 - String Resources & View Hierarchy Concepts -->
     <string name="lab_title">Lab 1: Environment &amp; Project Setup</string>
+    <string name="lab2_title">Lab 2: Layouts &amp; Basic Widgets</string>
+    <string name="lab3_title">Lab 3: Advanced Widgets &amp; Events</string>
     <string name="welcome_message">Welcome to SSC Expense Tracker</string>
     <string name="app_subtitle">Track your daily income and expenses seamlessly. Built for CACS351 Mobile Programming.</string>
     <string name="course_info">Bachelor in Computer Applications (BCA)</string>
     <string name="btn_get_started">Get Started</string>
+    <string name="btn_start_lab">Start Lab Works</string>
+    <string name="btn_see_projects">See Projects</string>
     <string name="toast_welcome">Lab 1 Running Successfully on Emulator!</string>
 
-    <!-- Lab 2: Unit 3 - Layout Types & Basic Widgets (Add Expense Form) -->
-    <string name="lab2_title">Lab 2: Layouts &amp; Basic Widgets</string>
+    <string name="title_lab_works">CACS351 Unit-wise Lab Works</string>
+    <string name="title_projects">Practical Projects &amp; Practice</string>
+
+    <!-- Add Expense Form Strings -->
     <string name="title_add_expense">Add New Expense</string>
     <string name="label_title">Expense Title</string>
     <string name="label_amount">Amount</string>
-    <string name="hint_expense_title">e.g., Lunch, Groceries, Taxi</string>
-    <string name="hint_expense_amount">e.g., 250.00</string>
-    <string name="btn_save_expense">Save Expense</string>
-    <string name="error_empty_fields">Please fill in all required fields!</string>
-    <string name="error_invalid_amount">Please enter a valid numeric amount!</string>
-    <string name="success_expense_saved">Expense saved successfully!</string>
-
-    <!-- Lab 3: Unit 3 - Advanced Widgets (Spinner, RadioButton, CheckBox) -->
-    <string name="lab3_title">Lab 3: Advanced Widgets &amp; Events</string>
     <string name="label_category">Category</string>
     <string name="label_payment_method">Payment Method</string>
     <string name="payment_cash">Cash</string>
     <string name="payment_card">Credit / Debit Card</string>
     <string name="payment_mobile">Mobile Banking</string>
     <string name="checkbox_recurring">Recurring Expense (Monthly)</string>
+    <string name="hint_expense_title">e.g., Lunch, Groceries, Taxi</string>
+    <string name="hint_expense_amount">e.g., 250.00</string>
+    <string name="btn_save_expense">Save Expense</string>
+    <string name="error_empty_fields">Please fill in all required fields!</string>
+    <string name="error_invalid_amount">Please enter a valid numeric amount!</string>
     <string name="error_select_category">Please select a valid expense category!</string>
-    <string name="btn_start_lab">Start lab</string>
-    <string name="btn_see_projects">See projects</string>
+    <string name="success_expense_saved">Expense saved successfully!</string>
+
+    <!-- Unit Descriptions -->
+    <string name="unit2_title">Unit 2: Android Platform &amp; UI Basics</string>
+    <string name="unit2_desc">Topics: Platform, Environment Setup, View Hierarchy, Widget Attributes, String Resources, Emulator.\nExample: Welcome screen layout with ConstraintLayout &amp; Toasts.</string>
+
+    <string name="unit3_title">Unit 3: Layouts, Widgets &amp; Event Handling</string>
+    <string name="unit3_desc">Topics: Linear/Relative/Constraint Layouts, TextView, EditText, CheckBox, RadioButton, Spinner.\nExample: Add Expense Form with validation &amp; event listeners.</string>
+
+    <string name="unit4_title">Unit 4: Activity Lifecycle &amp; Intents</string>
+    <string name="unit4_desc">Topics: Lifecycle hooks (onCreate, onResume), Multiple Activities, Explicit Intents, Passing Data.\nExample: Navigating between Dashboard and Add Expense.</string>
+
+    <string name="unit5_title">Unit 5: Fragments &amp; Dialogs</string>
+    <string name="unit5_desc">Topics: Fragment Lifecycle, FragmentManager, Options/Context Menus, AlertDialog, Custom Dialogs.\nExample: Tabbed Dashboard &amp; Edit Expense dialogs.</string>
+
+    <string name="unit6_title">Unit 6: Lists, Adapters &amp; RecyclerView</string>
+    <string name="unit6_desc">Topics: ListView, GridView, RecyclerView, Adapter, ViewHolder, LayoutManager.\nExample: Expense History dynamic list with CardView.</string>
+
+    <string name="unit7_title">Unit 7: Database, API &amp; Publishing</string>
+    <string name="unit7_desc">Topics: SQLite Database (CRUD), REST API Integration, JSON Parsing, Google Maps, App Publishing.\nExample: Storing expenses locally &amp; syncing currencies.</string>
 </resources>
